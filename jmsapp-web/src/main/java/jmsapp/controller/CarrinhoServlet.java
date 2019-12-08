@@ -29,6 +29,7 @@ public class CarrinhoServlet extends HttpServlet {
 	@Inject
 	private Cliente cliente;
 	
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("===============================================================================================");

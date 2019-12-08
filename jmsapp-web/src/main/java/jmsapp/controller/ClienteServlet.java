@@ -24,7 +24,7 @@ public class ClienteServlet extends HttpServlet {
 	
 	@Inject
 	Cliente cliente;
-
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

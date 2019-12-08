@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 	<h1>Cadastro de produtos</h1>
 
 	<br />
