@@ -86,7 +86,7 @@ public class CarrinhoServlet extends HttpServlet {
 		req.setAttribute("total", total);
 		req.setAttribute("cliente", cliente);
 		req.setAttribute("carrinho", carrinho);
-		req.getRequestDispatcher("venda.jsp").forward(req, resp);
+		req.getRequestDispatcher("index.jsp").forward(req, resp);
 		
 		System.out.println("Vou imprimir o total");
 		System.out.println(total);
@@ -97,7 +97,6 @@ public class CarrinhoServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		// DESSA MANEIRA NÃO FUNCIONOU
 		List<Produto> carrinho = new ArrayList<>();
 		
 		System.out.println("===============================================================================================");

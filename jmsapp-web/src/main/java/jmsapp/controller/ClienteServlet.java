@@ -41,7 +41,7 @@ public class ClienteServlet extends HttpServlet {
 				System.out.println("Cliente não encontrada!");
 				
 				req.setAttribute("mensagem", "Cliente não cadastrado");
-				req.getRequestDispatcher("venda.jsp").forward(req, resp);
+				req.getRequestDispatcher("index.jsp").forward(req, resp);
 	 
 			} else {
 	 
@@ -51,7 +51,7 @@ public class ClienteServlet extends HttpServlet {
 				System.out.println(cliente);
 				
 				req.setAttribute("cliente", cliente);
-				req.getRequestDispatcher("venda.jsp").forward(req, resp);
+				req.getRequestDispatcher("index.jsp").forward(req, resp);
 
 			}
 	 
