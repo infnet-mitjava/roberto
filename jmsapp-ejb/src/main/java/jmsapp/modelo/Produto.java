@@ -37,6 +37,11 @@ public class Produto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+	public void setPreco(Double valueOf) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

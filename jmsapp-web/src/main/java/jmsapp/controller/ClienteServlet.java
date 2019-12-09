@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import jmsapp.ejb.CarrinhoEjb;
 import jmsapp.modelo.Cliente;
 import jmsapp.modelo.Produto;
-import jmsapp.service.ClienteService;
+
 
 @WebServlet(name = "cliente", urlPatterns = "/cliente")
 public class ClienteServlet extends HttpServlet {

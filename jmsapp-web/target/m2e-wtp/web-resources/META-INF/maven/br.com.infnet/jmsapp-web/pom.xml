@@ -25,12 +25,10 @@
 
 	<name>jmsapp - web</name>
 
-
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-
 
 	<url>http://jboss.org/jbossas</url>
 	<licenses>
@@ -48,12 +46,39 @@
 			<name>jboss repo</name>
 			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
 		</repository>
+		<!-- ADICIONADO POR MIM -->
+		  	<repository>
+    	<id>snapshot-repository.java.net</id>
+    	<name>Java.net Snapshot Repository for Maven</name>
+    	<url>https://maven.java.net/content/repositories/snapshots/</url>
+    	<layout>default</layout>
+	</repository>  
+	
 	</repositories>
 
-
 	<dependencies>
-
-
+	
+	<!-- ADICIONADAS POR MIM -->
+	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+ 
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>2.22.1</version>
+      <scope>provided</scope>
+    </dependency>
+ 
+    <dependency>
+   	  <groupId>org.glassfish.jersey.media</groupId>
+   	  <artifactId>jersey-media-json-jackson</artifactId>
+   	  <version>2.22.1</version>
+    </dependency>
+	
 
 		<!-- Import the CDI API, we use provided scope as the API is included in 
 			JBoss WildFly -->
@@ -88,6 +113,14 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+				<!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-jms-client-bom -->
+		<dependency>
+			<groupId>org.wildfly</groupId>
+			<artifactId>wildfly-jms-client-bom</artifactId>
+			<version>17.0.1.Final</version>
+			<type>pom</type>
+		</dependency>
 
 
 		<!-- Import the JAX-RS API, we use provided scope as the API is included 
@@ -106,15 +139,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-
-
-		<!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-jms-client-bom -->
-		<dependency>
-			<groupId>org.wildfly</groupId>
-			<artifactId>wildfly-jms-client-bom</artifactId>
-			<version>17.0.1.Final</version>
-			<type>pom</type>
-		</dependency>
 
 
 		<!-- Import the JSF API, we use provided scope as the API is included in 

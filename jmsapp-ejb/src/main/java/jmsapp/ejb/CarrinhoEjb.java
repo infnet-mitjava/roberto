@@ -38,6 +38,11 @@ public class CarrinhoEjb {
 		em.remove(this.findOne(id));	
 	}
 
+	public Produto adicionar(Produto produto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 
 }
